@@ -59,9 +59,6 @@
 		E22AE0472C2D7E6A007B5DAC = {
 			isa = PBXGroup;
 			children = (
-				E22AE05F2C2D7ECA007B5DAC /* Networking */,
-				E22AE05E2C2D7EC2007B5DAC /* Models */,
-				E22AE05D2C2D7EAB007B5DAC /* Souces */,
 				E22AE0532C2D7E6A007B5DAC /* AuthSDK */,
 				E22AE06B2C2DB6B0007B5DAC /* AuthSDKTests */,
 				E22AE0522C2D7E6A007B5DAC /* Products */,
@@ -82,15 +79,10 @@
 			children = (
 				E22AE0542C2D7E6A007B5DAC /* AuthSDK.h */,
 				E22AE0552C2D7E6A007B5DAC /* AuthSDK.docc */,
+				E22AE05F2C2D7ECA007B5DAC /* Networking */,
+				E22AE05E2C2D7EC2007B5DAC /* Models */,
 			);
 			path = AuthSDK;
-			sourceTree = "<group>";
-		};
-		E22AE05D2C2D7EAB007B5DAC /* Souces */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Souces;
 			sourceTree = "<group>";
 		};
 		E22AE05E2C2D7EC2007B5DAC /* Models */ = {
