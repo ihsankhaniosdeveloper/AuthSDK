@@ -9,12 +9,32 @@
 /* Begin PBXBuildFile section */
 		E22AE0562C2D7E6A007B5DAC /* AuthSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = E22AE0552C2D7E6A007B5DAC /* AuthSDK.docc */; };
 		E22AE0572C2D7E6A007B5DAC /* AuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E22AE0542C2D7E6A007B5DAC /* AuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E22AE0612C2D7EF4007B5DAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22AE0602C2D7EF4007B5DAC /* User.swift */; };
+		E22AE0632C2D7FE8007B5DAC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22AE0622C2D7FE8007B5DAC /* AuthManager.swift */; };
+		E22AE06D2C2DB6B0007B5DAC /* AuthSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22AE06C2C2DB6B0007B5DAC /* AuthSDKTests.swift */; };
+		E22AE06E2C2DB6B0007B5DAC /* AuthSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22AE0512C2D7E6A007B5DAC /* AuthSDK.framework */; };
+		E22AE0752C2DB7B4007B5DAC /* AuthManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22AE0742C2DB7B4007B5DAC /* AuthManagerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E22AE06F2C2DB6B0007B5DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E22AE0482C2D7E6A007B5DAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22AE0502C2D7E6A007B5DAC;
+			remoteInfo = AuthSDK;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E22AE0512C2D7E6A007B5DAC /* AuthSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22AE0542C2D7E6A007B5DAC /* AuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthSDK.h; sourceTree = "<group>"; };
 		E22AE0552C2D7E6A007B5DAC /* AuthSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AuthSDK.docc; sourceTree = "<group>"; };
+		E22AE0602C2D7EF4007B5DAC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E22AE0622C2D7FE8007B5DAC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		E22AE06A2C2DB6B0007B5DAC /* AuthSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22AE06C2C2DB6B0007B5DAC /* AuthSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSDKTests.swift; sourceTree = "<group>"; };
+		E22AE0742C2DB7B4007B5DAC /* AuthManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,13 +45,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E22AE0672C2DB6B0007B5DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22AE06E2C2DB6B0007B5DAC /* AuthSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E22AE0472C2D7E6A007B5DAC = {
 			isa = PBXGroup;
 			children = (
+				E22AE05F2C2D7ECA007B5DAC /* Networking */,
+				E22AE05E2C2D7EC2007B5DAC /* Models */,
+				E22AE05D2C2D7EAB007B5DAC /* Souces */,
 				E22AE0532C2D7E6A007B5DAC /* AuthSDK */,
+				E22AE06B2C2DB6B0007B5DAC /* AuthSDKTests */,
 				E22AE0522C2D7E6A007B5DAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				E22AE0512C2D7E6A007B5DAC /* AuthSDK.framework */,
+				E22AE06A2C2DB6B0007B5DAC /* AuthSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +84,38 @@
 				E22AE0552C2D7E6A007B5DAC /* AuthSDK.docc */,
 			);
 			path = AuthSDK;
+			sourceTree = "<group>";
+		};
+		E22AE05D2C2D7EAB007B5DAC /* Souces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Souces;
+			sourceTree = "<group>";
+		};
+		E22AE05E2C2D7EC2007B5DAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E22AE0602C2D7EF4007B5DAC /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E22AE05F2C2D7ECA007B5DAC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E22AE0622C2D7FE8007B5DAC /* AuthManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E22AE06B2C2DB6B0007B5DAC /* AuthSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				E22AE06C2C2DB6B0007B5DAC /* AuthSDKTests.swift */,
+				E22AE0742C2DB7B4007B5DAC /* AuthManagerTests.swift */,
+			);
+			path = AuthSDKTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +150,24 @@
 			productReference = E22AE0512C2D7E6A007B5DAC /* AuthSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E22AE0692C2DB6B0007B5DAC /* AuthSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22AE0712C2DB6B0007B5DAC /* Build configuration list for PBXNativeTarget "AuthSDKTests" */;
+			buildPhases = (
+				E22AE0662C2DB6B0007B5DAC /* Sources */,
+				E22AE0672C2DB6B0007B5DAC /* Frameworks */,
+				E22AE0682C2DB6B0007B5DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E22AE0702C2DB6B0007B5DAC /* PBXTargetDependency */,
+			);
+			name = AuthSDKTests;
+			productName = AuthSDKTests;
+			productReference = E22AE06A2C2DB6B0007B5DAC /* AuthSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,9 +175,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					E22AE0502C2D7E6A007B5DAC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E22AE0692C2DB6B0007B5DAC = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -113,12 +200,20 @@
 			projectRoot = "";
 			targets = (
 				E22AE0502C2D7E6A007B5DAC /* AuthSDK */,
+				E22AE0692C2DB6B0007B5DAC /* AuthSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E22AE04F2C2D7E6A007B5DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22AE0682C2DB6B0007B5DAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,11 +227,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22AE0612C2D7EF4007B5DAC /* User.swift in Sources */,
+				E22AE0632C2D7FE8007B5DAC /* AuthManager.swift in Sources */,
 				E22AE0562C2D7E6A007B5DAC /* AuthSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E22AE0662C2DB6B0007B5DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22AE06D2C2DB6B0007B5DAC /* AuthSDKTests.swift in Sources */,
+				E22AE0752C2DB7B4007B5DAC /* AuthManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E22AE0702C2DB6B0007B5DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22AE0502C2D7E6A007B5DAC /* AuthSDK */;
+			targetProxy = E22AE06F2C2DB6B0007B5DAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E22AE0582C2D7E6A007B5DAC /* Debug */ = {
@@ -313,6 +427,36 @@
 			};
 			name = Release;
 		};
+		E22AE0722C2DB6B0007B5DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AuthSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E22AE0732C2DB6B0007B5DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AuthSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +474,15 @@
 			buildConfigurations = (
 				E22AE05B2C2D7E6A007B5DAC /* Debug */,
 				E22AE05C2C2D7E6A007B5DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22AE0712C2DB6B0007B5DAC /* Build configuration list for PBXNativeTarget "AuthSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22AE0722C2DB6B0007B5DAC /* Debug */,
+				E22AE0732C2DB6B0007B5DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
